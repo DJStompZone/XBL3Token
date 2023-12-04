@@ -2,6 +2,8 @@
 
 Enables you to quickly and easily retrieve, refresh, and erase your Minecraft Bedrock Realms API token.
 
+![banner](https://i.imgur.com/91yn9Gz.png)
+
 ## Installing
 
 - Unzip or clone the project
