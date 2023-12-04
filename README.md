@@ -1,4 +1,4 @@
-# Bedrock API XBL3.0 Utility
+# Bedrock API XBL3.0 Assistant
 
 Enables you to quickly and easily retrieve, refresh, and erase your Minecraft Bedrock Realms API token.
 
