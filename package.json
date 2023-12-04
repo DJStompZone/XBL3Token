@@ -1,0 +1,21 @@
+{
+  "name": "xbl3-realm-api",
+  "version": "1.0.0",
+  "description": "Obtain an XBL3.0 token for use with the Minecraft Bedrock Realms API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "DJ Stomp",
+  "license": "MIT",
+  "dependencies": {
+    "prismarine-auth": "^2.3.0"
+  },
+  "audit-level": "critical",
+  "scripts": {
+    "start": "node index.js",
+    "decode": "echo \"const {shiftAscii} = require('./auth'); const {readFileSync} = require('fs'); try {console.log(shiftAscii(readFileSync('./.xbl3').toString(), -13))} catch {console.log('Cannot decode, token file not found!')}\"| node -",
+    "erase": "node -e \"const readline = require('readline'); const rl = readline.createInterface({ input: process.stdin, output: process.stdout }); rl.question('Really delete saved credentials? (y/n) ', (answer) => { if (answer.toLowerCase() === 'y') { const { purgeCache } = require('./auth'); purgeCache(true); } rl.close(); });\""
+  }
+}
